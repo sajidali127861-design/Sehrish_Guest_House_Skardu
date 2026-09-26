@@ -16,7 +16,7 @@ export default function AboutPage({ setPage }) {
           <div>
             <p className="section-label" style={{ textAlign: "center" ,color:COLORS.white }}>OUR STORY</p>
             <h1 style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "clamp(32px, 6vw, 72px)", color: "#F5EFE6", fontWeight: 300, letterSpacing: 3, margin: 0 }}>
-              About Skarchan Resorts
+              About Sehrish Guest House Skardu
             </h1>
           </div>
         </div>
@@ -30,9 +30,9 @@ export default function AboutPage({ setPage }) {
           </h2>
           <div className="gold-divider--center gold-divider" style={{ display: "block" }} />
           {[
-            "Skarchan Resorts was built with one vision: to create a place where travellers can find true sukoon — peace — in the cradle of the world's mightiest mountain range.",
-            "Located in Skardu, Gilgit-Baltistan, our property spans several acres of sculpted landscape featuring circular heritage huts, a central swimming pool, manicured lawns, and a domed restaurant that celebrates local culture through food and architecture.",
-            "We believe that luxury and authenticity are not opposites. Every structure at Skarchan Resort is built using traditional Baltistani techniques — mud-plaster walls, hand-carved wooden ceilings, stone pathways, and locally forged iron fixtures. Our guests often say it feels like stepping into a living museum, except with every modern comfort.",
+            "Sehrish Guest House Skardu was built with one vision: to create a place where travellers can find true sukoon — peace — in the cradle of the world's mightiest mountain range.",
+            "Located in Skardu, Gilgit-Baltistan, our property offers comfortable, welcoming stays with warm hospitality, mountain views, and a genuine sense of local charm.",
+            "We believe that luxury and authenticity are not opposites. Every corner of Sehrish Guest House is designed to make guests feel at home while still enjoying the beauty and comfort of a memorable Skardu getaway.",
             "We are committed to sustainable, community-rooted hospitality — employing local craftsmen, sourcing ingredients from nearby farms, and preserving the integrity of this sacred landscape for generations to come.",
           ].map((para, i) => (
             <AnimBlock key={i} delay={i * 0.1}>

@@ -1,14 +1,14 @@
 // ============================================
-// Skarchan RESORTS — SITE CONFIGURATION
+// Sehrish Guest House Skardu — SITE CONFIGURATION
 // Update these values to customize your site
 // ============================================
 
-export const HOTEL_NAME = "Arish Luxury Suites";
+export const HOTEL_NAME = "Sehrish Guest House Skardu";
 export const HOTEL_TAGLINE = "Where the Mountains Meet Timeless Luxury";
-export const HOTEL_LOCATION = "Sumbul Town, Olding, 16100 Skardu, Pakista";
-export const HOTEL_EMAIL = "info@arishluxurysuites.com";
-export const WHATSAPP_NUMBER = "+923210003572"; // Replace with real number (no + sign)
-export const HOTEL_PHONE = "++923210003572";
+export const HOTEL_LOCATION = "Ali Abad Khagrong Skardu";
+export const HOTEL_EMAIL = "info@sehrishguesthouse.com";
+export const WHATSAPP_NUMBER = "+923459604578"; // Replace with real number (no + sign)
+export const HOTEL_PHONE = "+923459604578";
 
 // ============================================
 // GOOGLE APPS SCRIPT — BOOKING FORM BACKEND
@@ -20,9 +20,7 @@ export const HOTEL_PHONE = "++923210003572";
 //    - Execute as: Me
 //    - Who has access: Anyone
 // 4. Copy the deployment URL (ends with /exec) and paste it below.
-export const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyUs9dFt6EJu6PBJ-0JG-Y5CQkYiKY2FAwQOo7F8zmQsr1y3DmGzLUYwZw_kZr53nMA/exec";
-
-
+export const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyk7-wprW2xZfeLObpRWFGF0ftVY8sOEeuAz6zOo6cm7lMg7cQgL6OqO7gDD9WRJvDT3A/exec";
 
 // Sends a room booking submission to the Google Apps Script backend,
 // which appends a row to the Google Sheet and emails the hotel.
@@ -56,7 +54,7 @@ export const buildBookingMessage = (roomName, checkIn, checkOut, guests) => {
   if (roomName && checkIn && checkOut && guests) {
     return `Assalamu Alaikum! 🌿
 
-I would like to make a reservation at Skarchan Resorts.
+I would like to make a reservation at Sehrish Guest House Skardu.
 
 🏨 *Room:* ${roomName}
 📅 *Check-in:* ${formatDate(checkIn)}
@@ -64,7 +62,7 @@ I would like to make a reservation at Skarchan Resorts.
 🌙 *Nights:* ${nights}
 👥 *Guests:* ${guests}
 
-Could you please confirm availability and share the booking details? 
+Could you please confirm availability and share the booking details?
 
 Thank you! 🙏`;
   }
@@ -72,7 +70,7 @@ Thank you! 🙏`;
   if (roomName) {
     return `Assalamu Alaikum! 🌿
 
-I am interested in booking the *${roomName}* at LOCAL rooms x skardu, Skardu.
+I am interested in booking the *${roomName}* at Sehrish Guest House Skardu, Skardu.
 
 Could you please share availability and pricing details?
 
@@ -81,7 +79,7 @@ Thank you! 🙏`;
 
   return `Assalamu Alaikum! 🌿
 
-I would like to make a reservation at LOCAL rooms x skardu, Skardu.
+I would like to make a reservation at Sehrish Guest House Skardu, Skardu.
 
 Could you please help me with availability and room options?
 
@@ -93,7 +91,7 @@ export const buildGeneralEnquiryMessage = (name, message) => {
 
 *Name:* ${name || "Guest"}
 
-${message || "I have an enquiry about LOCAL rooms x skardu."}
+${message || "I have an enquiry about Sehrish Guest House Skardu."}
 
 Thank you! 🙏`;
 };

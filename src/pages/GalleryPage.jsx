@@ -27,7 +27,7 @@ export default function GalleryPage({ setPage }) {
             Gallery
           </h1>
           <p style={{ fontFamily: "Lato, sans-serif", fontSize: 14, color: COLORS.gold, maxWidth: 500, margin: "16px auto 0", lineHeight: 1.8 }}>
-            A glimpse into the beauty of Skarchan Resorts — from our heritage architecture and rooms to the majestic Karakoram that surrounds us.
+            A glimpse into the beauty of Sehrish Guest House Skardu — from our heritage-inspired rooms to the majestic Karakoram that surrounds us.
           </p>
         </AnimBlock>
       </div>

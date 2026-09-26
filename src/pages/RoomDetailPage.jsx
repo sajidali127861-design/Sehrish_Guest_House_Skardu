@@ -6,6 +6,7 @@ import Lightbox from "../components/Lightbox.jsx";
 import ThankYouModal from "../components/ThankYouModal.jsx";
 import MultiRoomBookingModal from "../components/MultiRoomBookingModal.jsx";
 import { ROOMS, defaultVariantKey } from "../data/rooms.js";
+import { HOTEL_EMAIL, HOTEL_PHONE } from "../config.js";
 
 // ── Reusable Info Box Component ───────────────────────────────
 function InfoBox({ title, items, children }) {
@@ -108,13 +109,13 @@ export default function RoomDetailPage({ roomId, setPage }) {
 
             <InfoBox title="CALL US AT">
               <p style={{ fontFamily: "Lato, sans-serif", fontSize: 14, color: "#333", margin: 0, textAlign: "center" }}>
-                <span style={{ color: "#C4922A", marginRight: 8 }}>📞</span> +923555786794
+                <span style={{ color: "#C4922A", marginRight: 8 }}>📞</span> {HOTEL_PHONE}
               </p>
             </InfoBox>
 
             <InfoBox title="EMAIL US AT">
               <p style={{ fontFamily: "Lato, sans-serif", fontSize: 14, color: "#333", margin: 0, textAlign: "center" }}>
-                <span style={{ color: "#C4922A", marginRight: 8 }}>✉️</span> info@arishluxurysuites.com
+                <span style={{ color: "#C4922A", marginRight: 8 }}>✉️</span> {HOTEL_EMAIL}
               </p>
             </InfoBox>
 

@@ -16,7 +16,7 @@ export default function ContactPage({ setPage }) {
 
   const sendEmail = () => {
     const subject = encodeURIComponent(`General Enquiry - ${name || "Guest"}`);
-    const body = encodeURIComponent(`Hi Skarchan Resorts,\n\n${message}\n\nBest regards,\n${name}`);
+    const body = encodeURIComponent(`Hi Sehrish Guest House Skardu,\n\n${message}\n\nBest regards,\n${name}`);
     window.open(`mailto:${HOTEL_EMAIL}?subject=${subject}&body=${body}`, "_self");
   };
 

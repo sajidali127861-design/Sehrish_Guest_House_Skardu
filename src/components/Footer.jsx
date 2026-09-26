@@ -54,7 +54,7 @@ export default function Footer({ setPage }) {
               style={{
                 fontFamily: "Cormorant Garamond, serif",
                 fontSize: 20,
-                color: COLORS.g,
+                color: COLORS.gold,
                 letterSpacing: "0.15em",
                 fontWeight: 500,
               }}

@@ -299,7 +299,7 @@ function QuickBookBar() {
                 height: 47,
               }}
               onMouseOver={(e) => {
-                e.currentTarget.style.background = COLORS.primaryDark;
+                e.currentTarget.style.background = COLORS.primary;
               }}
               onMouseOut={(e) => {
                 e.currentTarget.style.background = COLORS.primary;
@@ -347,7 +347,7 @@ function WelcomeSection() {
                   fontWeight: "bold",
                 }}
               >
-                Welcome to Arish Luxury Suites
+                Welcome to Sehrish Guest House Skardu
               </h2>
 
               <h3
@@ -378,7 +378,7 @@ function WelcomeSection() {
                   marginBottom: 20,
                 }}
               >
-                Welcome our guests to Arish Luxury Suites located in the
+                Welcome our guests to Sehrish Guest House Skardu located in the
                 heart of Skardu. Nestled amidst the majestic Karakoram peaks,
                 our retreat offers a perfect blend of traditional Baltistani
                 heritage and modern comfort. Let nature be your sanctuary.
@@ -399,7 +399,7 @@ function WelcomeSection() {
             >
               <img
                 src={IMGS.ext02}
-                alt="Welcome to Arish Luxury Suites"
+                alt="Welcome to Sehrish Guest House Skardu"
                 loading="lazy"
                 style={{
                   width: "100%",
@@ -563,7 +563,7 @@ export function DiningHighlight() {
                 fontWeight: 400,
               }}
             >
-              Heritage Culinary Experience at Arish Luxury Suites
+              Heritage Culinary Experience at Sehrish Guest House Skardu
             </h2>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
@@ -727,100 +727,103 @@ export function AmenitiesStrip() {
 export function BookingReviews() {
   const [startIndex, setStartIndex] = useState(0);
 
-const reviews = [
+  const reviews = [
+    {
+      name: "Janne",
+      country: "Netherlands",
+      flag: "🇳🇱",
+      date: "October 5, 2025",
+      score: "10",
+      title: "Wonderful stay in Skardu",
+      positive:
+        "Comfortable, spacious and clean room and a beautiful garden to sit outside. Location is great, with a couple of nice restaurants close by. Staff is super friendly and welcoming. Amazing stay!",
+      avatarImg: null,
+      avatarColor: "#5B7065",
+      initial: "J",
+      roomType: "Deluxe Twin Room",
+      stayDetails: "2 nights · Couple",
+    },
+    {
+      name: "Nathalie",
+      country: "Switzerland",
+      flag: "🇨🇭",
+      date: "July 17, 2025",
+      score: "10",
+      title: "Lovely place to stay in Skardu",
+      positive:
+        "Friendly and helpful host who can arrange tours and transfers. Lovely garden area with a lot of shade which was really nice in the hot weather. In a quiet location, but close to some nice restaurants.",
+      avatarImg: null,
+      avatarColor: "#8C6D58",
+      initial: "N",
+      roomType: "Deluxe Twin Room",
+      stayDetails: "2 nights · Couple",
+    },
+    {
+      name: "Hashim",
+      country: "United Arab Emirates",
+      flag: "🇦🇪",
+      date: "August 18, 2025",
+      score: "10",
+      title: "3 Days in Sehrish Guest House Skardu",
+      positive:
+        "Overall the stay was very comfortable. The rooms were huge with all the facilities required. Staff were very friendly and always available. Even the owner of the hotel himself visited us to ensure everything was perfect.",
+      avatarImg: IMGS?.revHashim || null,
+      avatarColor: "#614F44",
+      initial: "H",
+      roomType: "Executive Suite",
+      stayDetails: "3 nights · Family",
+    },
     {
       name: "Haseeb",
       country: "United Kingdom",
-      flag: "🇬🇧", // or "GB"
+      flag: "🇬🇧",
       date: "September 27, 2025",
       score: "10",
       title: "Great location in Skardu",
       positive:
         "Attentive staff always on site to help. Large beds and very comfy. They accept card and bank transfer which made life very easy.",
       avatarImg: null,
-      avatarColor: COLORS.purple || "#6B21A8",
+      avatarColor: "#4A5568",
       initial: "H",
       roomType: "Executive Suite",
-      stayDetails: "3 nights · September 2025 · Group",
+      stayDetails: "3 nights · Group",
     },
     {
-      name: "Rahim",
-      country: "United Arab Emirates",
-      flag: "🇦🇪", // or "AE"
-      date: "August 19, 2025",
-      score: "10",
-      title: "Exceptional",
-      positive: "Easy access and cooperative staff.",
-      negative: "Cleanness and location",
-      avatarImg: null,
-      avatarColor: COLORS.dark || "#4A3B32",
-      initial: "R",
-      roomType: "Executive Suite",
-      stayDetails: "2 nights · August 2025 · Family",
-    },
-    {
-      name: "Hashim",
-      country: "United Arab Emirates",
-      flag: "🇦🇪", // or "AE"
-      date: "August 18, 2025",
-      score: "10",
-      title: "3 Days in Arish Luxury Suites",
+      name: "Timothy",
+      country: "Australia",
+      flag: "🇦🇺",
+      date: "October 11, 2025",
+      score: "8.0",
+      title: "Good option in peaceful courtyard",
       positive:
-        "Overall the stay was very comfortable. The rooms were huge with all the facilities required. Staff were very friendly and always available. Even the owner of the hotel himself visited us and keep checking if anything required. The location is very good since it is in the city so everything was nearby.\n\nI recommend this hotel to everyone who is visiting Skardu for tourism to stay in this hotel as the hotel rooms are huge, location is very good and Afterall it is not expensive at all.",
-      avatarImg: IMGS.revHashim,
-      avatarColor: null,
-      roomType: "Executive Suite",
-      stayDetails: "3 nights · July 2025 · Family",
+        "Good location. Pleasant courtyard and garden. Comfortable good sized room. Excellent bathroom.",
+      avatarImg: null,
+      avatarColor: "#D97706",
+      initial: "T",
+      roomType: "Deluxe Double Room",
+      stayDetails: "1 night · Solo traveler",
     },
     {
-      name: "Anil",
-      country: "United Kingdom",
-      flag: "🇬🇧", // or "GB"
-      date: "August 11, 2025",
+      name: "Rene",
+      country: "Netherlands",
+      flag: "🇳🇱",
+      date: "July 12, 2025",
       score: "9.0",
-      title:
-        "Was there with my mrs for a couple of days and we really enjoyed our stay. Both the front-office staff, special mention",
+      title: "Wonderful garden atmosphere",
       positive:
-        "Very clean and finished to a high spec. Comfortable beds and pleasent living space in the executive room, set-up in a cosy guest house. Nice complementary breakfast too.",
+        "Lovely serene garden, quiet location, and authentic hospitality in Skardu.",
       avatarImg: null,
-      avatarColor: COLORS.blue || "#0284C7",
-      initial: "A",
-      roomType: "Executive Suite",
-      stayDetails: "2 nights · August 2025 · Couple",
-    },
-    {
-      name: "Caitríona",
-      country: "Ireland",
-      flag: "🇮🇪", // or "IE"
-      date: "August 12, 2026",
-      score: "10",
-      title: "Exceptional",
-      positive:
-        "Great accommodation! We stayed here for 3 nights during our trip to Skardu and had a very comfortable and enjoyable stay here. The staff were very welcoming and hospitable and gave us a complimentary room upgrade. The room was very spacious, the bed was very comfortable, air conditioning was very good, there was a fridge in the room also and the shower was hot and powerful. Breakfast was simple but very tasty.",
-      avatarImg: IMGS.revCaitriona,
-      avatarColor: null,
-      roomType: "Deluxe Room",
-      stayDetails: "2 nights · August 2026 · Couple",
-    },
-    {
-      name: "Naeem",
-      country: "Pakistan",
-      flag: "🇵🇰", // or "PK"
-      date: "June 21, 2026",
-      score: "10",
-      title: "Exceptional",
-      positive: "Decent location and decent service.",
-      avatarImg: IMGS.revNaeem,
-      avatarColor: null,
-      roomType: "Deluxe Room",
-      stayDetails: "3 nights · June 2026 · Couple",
+      avatarColor: "#1E3A8A",
+      initial: "R",
+      roomType: "Deluxe Twin Room",
+      stayDetails: "2 nights · Couple",
     },
   ];
 
   useEffect(() => {
     const slideInterval = setInterval(() => {
       handleNext();
-    }, 5500);
+    }, 6000);
     return () => clearInterval(slideInterval);
   }, [startIndex]);
 
@@ -840,27 +843,27 @@ const reviews = [
     return out;
   };
 
-const bookingUrl =
-  "https://www.booking.com/hotel/pk/arish-luxury-suites.html#tab-reviews";
+  const bookingUrl = "https://www.booking.com/hotel/pk/sehrish-guest-house.html#tab-reviews";
+
   return (
     <>
-      <section style={{ background: COLORS.background, padding: "clamp(60px, 8vw, 80px) 32px" }}>
+      <section style={{ background: COLORS.background, padding: "clamp(60px, 8vw, 85px) 32px" }}>
         <div style={{ maxWidth: 1140, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr", gap: "40px" }}>
-          
+
           {/* Header Bar */}
           <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "24px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
               <img
-                src={IMGS.hero02}
-                alt="Resort Thumbnail"
+                src={IMGS.hero01}
+                alt="Sehrish Guest House"
                 loading="lazy"
                 style={{
-                  width: "90px",
-                  height: "60px",
+                  width: "88px",
+                  height: "62px",
                   objectFit: "cover",
-                  borderRadius: "8px",
+                  borderRadius: "10px",
                   border: `1px solid ${COLORS.lightBorder}`,
-                  boxShadow: "0 4px 12px rgba(28, 18, 9, 0.05)",
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
                 }}
               />
               <div>
@@ -873,16 +876,28 @@ const bookingUrl =
                     margin: "0 0 4px",
                   }}
                 >
-                  Arish Luxury Suites
+                  Sehrish Guest House Skardu
                 </h3>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <div style={{ display: "flex", gap: "2px", color: COLORS.booking, fontSize: "13px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                  <div style={{ display: "flex", gap: "2px", color: COLORS.booking, fontSize: "14px" }}>
                     {[1, 2, 3, 4, 5].map((s) => (
                       <span key={s}>★</span>
                     ))}
                   </div>
-                  <p style={{ fontFamily: "Lato, sans-serif", fontSize: "14px", color: COLORS.textSecondary, margin: 0 }}>
-                    Verified Guest Reviews
+                  <span
+                    style={{
+                      background: COLORS.booking,
+                      color: COLORS.white,
+                      fontSize: "11px",
+                      fontWeight: 700,
+                      padding: "2px 7px",
+                      borderRadius: "4px",
+                    }}
+                  >
+                    9.8 / 10
+                  </span>
+                  <p style={{ fontFamily: "Lato, sans-serif", fontSize: "13px", color: COLORS.textSecondary, margin: 0 }}>
+                    Verified Booking.com Reviews
                   </p>
                 </div>
               </div>
@@ -898,11 +913,11 @@ const bookingUrl =
                 fontFamily: "Lato, sans-serif",
                 fontSize: "13px",
                 fontWeight: 600,
-                letterSpacing: "0.08em",
+                letterSpacing: "0.06em",
                 color: COLORS.textPrimary,
                 cursor: "pointer",
-                transition: "all 0.25s ease-in-out",
-                boxShadow: "0 2px 6px rgba(28, 18, 9, 0.03)",
+                transition: "all 0.25s ease",
+                boxShadow: "0 2px 6px rgba(0,0,0,0.03)",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = COLORS.textPrimary;
@@ -913,12 +928,13 @@ const bookingUrl =
                 e.currentTarget.style.color = COLORS.textPrimary;
               }}
             >
-              Write a Review
+              Review on Booking.com
             </button>
           </div>
 
           {/* Carousel Slider */}
-          <div style={{ position: "relative", display: "flex", alignItems: "center", padding: "0 10px" }}>
+          <div style={{ position: "relative", display: "flex", alignItems: "center", padding: "0 8px" }}>
+
             {/* Prev Arrow */}
             <button
               onClick={handlePrev}
@@ -935,11 +951,11 @@ const bookingUrl =
                 cursor: "pointer",
                 fontSize: "22px",
                 color: COLORS.textPrimary,
-                boxShadow: "0 4px 14px rgba(28, 18, 9, 0.08)",
+                boxShadow: "0 4px 14px rgba(0,0,0,0.08)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                transition: "transform 0.2s, background 0.2s",
+                transition: "transform 0.2s ease",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.08)")}
               onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
@@ -948,7 +964,7 @@ const bookingUrl =
             </button>
 
             {/* Review Cards Grid */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "24px", width: "100%" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px", width: "100%" }}>
               {getDisplaySet().map((rev, idx) => (
                 <div
                   key={idx}
@@ -956,33 +972,32 @@ const bookingUrl =
                     background: COLORS.white,
                     border: `1px solid ${COLORS.border}`,
                     borderRadius: "18px",
-                    padding: "28px",
+                    padding: "26px",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    minHeight: "280px",
-                    boxShadow: "0 6px 20px rgba(28, 18, 9, 0.03)",
-                    position: "relative",
+                    minHeight: "310px",
+                    boxShadow: "0 6px 20px rgba(0,0,0,0.03)",
                   }}
                 >
                   <div>
-                    {/* Top Row: Avatar & Booking Badge */}
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-                      <div style={{ display: "flex", gap: "14px", alignItems: "center" }}>
+                    {/* Top Row: Avatar & Booking Score Box */}
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 14 }}>
+                      <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
                         {rev.avatarImg ? (
                           <img
                             src={rev.avatarImg}
                             alt={rev.name}
                             loading="lazy"
-                            style={{ width: "46px", height: "46px", borderRadius: "50%", objectFit: "cover" }}
+                            style={{ width: "44px", height: "44px", borderRadius: "50%", objectFit: "cover" }}
                           />
                         ) : (
                           <div
                             style={{
-                              width: "46px",
-                              height: "46px",
+                              width: "44px",
+                              height: "44px",
                               borderRadius: "50%",
-                              background: rev.avatarColor || COLORS.primary,
+                              background: rev.avatarColor,
                               color: COLORS.white,
                               display: "flex",
                               justifyContent: "center",
@@ -1000,42 +1015,60 @@ const bookingUrl =
                             {rev.name}
                           </h4>
                           <p style={{ margin: "2px 0 0", fontFamily: "Lato, sans-serif", fontSize: "12px", color: COLORS.textLight }}>
-                            {rev.flag} {rev.country} • <span style={{ color: COLORS.textMuted }}>{rev.date}</span>
+                            {rev.flag} {rev.country}
                           </p>
                         </div>
                       </div>
+
+                      {/* Official Booking.com Score Pill */}
                       <div
                         style={{
                           background: COLORS.booking,
                           color: COLORS.white,
                           fontWeight: 700,
-                          padding: "3px 8px",
-                          borderRadius: "4px",
-                          fontSize: "12px",
+                          padding: "4px 9px",
+                          borderRadius: "6px 6px 6px 0px",
+                          fontSize: "13px",
                           fontFamily: "Lato, sans-serif",
+                          boxShadow: "0 2px 6px rgba(0, 59, 149, 0.2)",
                         }}
                       >
-                        B.
+                        {rev.score}
                       </div>
                     </div>
 
-                    {/* Star Rating & Verified Label */}
-                    <div style={{ display: "flex", alignItems: "center", gap: "8px", margin: "16px 0 12px" }}>
-                      <div style={{ display: "flex", gap: "1px", color: COLORS.booking, fontSize: "12px" }}>
-                        {[1, 2, 3, 4, 5].map((item) => (
-                          <span key={item}>★</span>
-                        ))}
-                      </div>
-                      <span style={{ color: COLORS.primary, fontSize: "11px", fontWeight: 700 }}>
-                        ✔ Verified
-                      </span>
+                    {/* Room Category & Stay Info */}
+                    <div
+                      style={{
+                        fontSize: "11px",
+                        fontFamily: "Lato, sans-serif",
+                        color: COLORS.textMuted,
+                        marginBottom: "12px",
+                        letterSpacing: "0.02em",
+                      }}
+                    >
+                      <span>🛏️ {rev.roomType}</span> • <span>{rev.stayDetails}</span>
                     </div>
 
-                    {/* Review Snippet */}
+                    {/* Review Title */}
+                    <h5
+                      style={{
+                        margin: "0 0 8px",
+                        fontFamily: "Cormorant Garamond, serif",
+                        fontSize: "18px",
+                        fontWeight: 700,
+                        color: COLORS.textPrimary,
+                        lineHeight: 1.25,
+                      }}
+                    >
+                      "{rev.title}"
+                    </h5>
+
+                    {/* Review Body */}
                     <p
                       style={{
                         fontFamily: "Lato, sans-serif",
-                        fontSize: "14px",
+                        fontSize: "13.5px",
                         color: COLORS.textSecondary,
                         lineHeight: "1.6",
                         margin: 0,
@@ -1045,27 +1078,29 @@ const bookingUrl =
                         overflow: "hidden",
                       }}
                     >
-                      "{rev.positive}"
+                      {rev.positive}
                     </p>
                   </div>
 
-                  {/* Card Bottom: Read Link + Editorial Quote Icon */}
+                  {/* Card Bottom: Date & Verified link */}
                   <div
                     style={{
                       display: "flex",
                       justifyContent: "space-between",
                       alignItems: "center",
-                      marginTop: "20px",
+                      marginTop: "18px",
                       borderTop: `1px solid ${COLORS.lightBorder}`,
-                      paddingTop: "14px",
+                      paddingTop: "12px",
                     }}
                   >
+                    <span style={{ fontSize: "11px", fontFamily: "Lato, sans-serif", color: COLORS.textLight }}>
+                      {rev.date}
+                    </span>
                     <span
                       onClick={() => window.open(bookingUrl, "_blank")}
                       style={{
                         fontFamily: "Lato, sans-serif",
-                        fontSize: "12px",
-                        letterSpacing: "0.05em",
+                        fontSize: "11px",
                         color: COLORS.primary,
                         fontWeight: 700,
                         cursor: "pointer",
@@ -1073,20 +1108,7 @@ const bookingUrl =
                         textUnderlineOffset: "3px",
                       }}
                     >
-                      Read Original Review →
-                    </span>
-                    <span
-                      style={{
-                        fontSize: "36px",
-                        color: COLORS.stone,
-                        fontFamily: "Cormorant Garamond, serif",
-                        lineHeight: "0",
-                        height: "10px",
-                        transform: "translateY(8px)",
-                        userSelect: "none",
-                      }}
-                    >
-                      ”
+                      View on Booking.com →
                     </span>
                   </div>
                 </div>
@@ -1109,11 +1131,11 @@ const bookingUrl =
                 cursor: "pointer",
                 fontSize: "22px",
                 color: COLORS.textPrimary,
-                boxShadow: "0 4px 14px rgba(28, 18, 9, 0.08)",
+                boxShadow: "0 4px 14px rgba(0,0,0,0.08)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                transition: "transform 0.2s, background 0.2s",
+                transition: "transform 0.2s ease",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.08)")}
               onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
@@ -1131,17 +1153,18 @@ const bookingUrl =
 
 // ── 📍 Location Section ───────────────────────────────────────
 export function LocationSection() {
-  // Google Maps embed URL for Arish Luxury Suites, Skardu
-  const mapEmbedUrl = "https://maps.google.com/maps?q=Arish+Luxury+Suites+Skardu&t=&z=15&ie=UTF8&iwloc=&output=embed";
-  
-  // Direct Google Maps link for opening in a new tab / app
-  const directMapUrl = "https://www.google.com/maps/search/?api=1&query=Arish+Luxury+Suites+Skardu";
+  // ── Exact Google Maps URLs for Sehrish Guest House Skardu ──────────
+  const mapEmbedUrl =
+    "https://maps.google.com/maps?q=Sehrish+Guest+House+572+Sumbul+Town+Olding+Skardu+Pakistan&t=&z=15&ie=UTF8&iwloc=&output=embed";
+
+  const directMapUrl =
+    "https://www.google.com/maps/search/?api=1&query=Sehrish+Guest+House+Skardu+Pakistan";
 
   return (
     <>
       <section style={{ background: COLORS.white, padding: "clamp(60px, 8vw, 90px) 32px" }}>
         <div style={{ maxWidth: 1140, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr", gap: "36px" }}>
-          
+
           <div style={{ textAlign: "center", marginBottom: "8px" }}>
             <p
               style={{
@@ -1182,14 +1205,16 @@ export function LocationSection() {
                 color: COLORS.textSecondary,
                 marginTop: "16px",
                 marginBottom: "24px",
+                lineHeight: "1.6",
               }}
             >
-              📍 <strong style={{ color: COLORS.textPrimary }}>572 Sumbul Town, Olding, Skardu</strong>
+              📍 <strong style={{ color: COLORS.textPrimary }}> Ali Abad Khagrong Skardu</strong>
               <span style={{ display: "block", marginTop: "4px", fontSize: "13px" }}>
-                Plus Code: <strong>7JMW+34 Skardu, Gilgit-Baltistan, Pakistan</strong>
+                Plus Code: <strong> Skardu, Gilgit-Baltistan, Pakistan</strong>
+
               </span>
             </p>
-            
+
             <button
               onClick={() => window.open(directMapUrl, "_blank")}
               style={{
@@ -1204,7 +1229,7 @@ export function LocationSection() {
                 fontWeight: 600,
                 cursor: "pointer",
                 transition: "all 0.3s ease",
-                boxShadow: "0 6px 18px rgba(23, 74, 59, 0.25)",
+                boxShadow: "0 6px 18px rgba(28, 18, 9, 0.15)",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = COLORS.primaryDark;
@@ -1231,7 +1256,7 @@ export function LocationSection() {
               }}
             >
               <iframe
-                title="Arish Luxury Suites Accurate Location"
+                title="Sehrish Guest House Skardu Accurate Location"
                 src={mapEmbedUrl}
                 style={{ width: "100%", height: "100%", border: 0 }}
                 allowFullScreen=""

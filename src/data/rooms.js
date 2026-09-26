@@ -30,7 +30,7 @@ export const ROOMS = [
     capacity: 2,
     maxMattress: 2,
     mattressPrice: 3000,
-    heroImg: "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/executivevilla01.jpg",
+    heroImg: IMGS.executivevilla01,
     gallery: [IMGS.executivevilla01, IMGS.executivevilla03, IMGS.executivevilla02, IMGS.executivevilla04, IMGS.executivevilla05, IMGS.executivevilla06, IMGS.executivevilla07],
     desc: "A cozy and elegant space perfectly suited for a peaceful getaway.",
     longDesc: "The Executive Villa is ideal for those looking for comfort and simplicity. With soft interiors, clean finishes, and breathtaking glimpses of the surrounding mountains, it offers just the right balance of ease and connection to the landscape. Everything you need, thoughtfully in place.",
@@ -213,17 +213,14 @@ export const GALLERY_CATEGORIES = [
 ];
 
 export const GALLERY_IMAGES = [
-   "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/gallery6.jpg",
-  "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/gallery1.jpg",
-   "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/outsideview.jpg",
-   "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/outdoorview.jpg",
-   "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/outsideview2.jpg",
-   "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/deluxeluxarysuite07.jpg",
-   // "https://cdn.jsdelivr.net/gh/baqirbalti/arish_luxury_image/room7.jpg",
-   "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/room3.jpg",
-   "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/room8.jpg",
-   "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/room5.jpg",
-  // "https://cdn.jsdelivr.net/gh/sajidali127861-design/arish_luxury_image/room6.jpg",
- 
+   "https://cdn.jsdelivr.net/gh/sajidali127861-design/sehrish_house_image/gallery6.jpg",
+  "https://cdn.jsdelivr.net/gh/sajidali127861-design/sehrish_house_image/gallery1.jpg",
+   "https://cdn.jsdelivr.net/gh/sajidali127861-design/sehrish_house_image/outsideview.jpg",
+   "https://cdn.jsdelivr.net/gh/sajidali127861-design/sehrish_house_image/outdoorview.jpg",
+   "https://cdn.jsdelivr.net/gh/sajidali127861-design/sehrish_house_image/outsideview2.jpg",
+   "https://cdn.jsdelivr.net/gh/sajidali127861-design/sehrish_house_image/deluxeluxarysuite07.jpg",
+   "https://cdn.jsdelivr.net/gh/sajidali127861-design/sehrish_house_image/room3.jpg",
+   "https://cdn.jsdelivr.net/gh/sajidali127861-design/sehrish_house_image/room8.jpg",
+   "https://cdn.jsdelivr.net/gh/sajidali127861-design/sehrish_house_image/room5.jpg",
 ];
  

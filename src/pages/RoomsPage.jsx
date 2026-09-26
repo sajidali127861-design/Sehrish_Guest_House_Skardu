@@ -29,7 +29,7 @@ export default function RoomsPage({ setPage, setRoomId }) {
             Rooms & Villas
           </h1>
           <p style={{ fontFamily: "Lato, sans-serif", fontSize: 15, color: COLORS.gold, maxWidth: 520, margin: "16px auto 0", lineHeight: 1.8 }}>
-            Each accommodation at Skarchan Resorts is a handcrafted retreat — designed to blend heritage architecture with modern comfort against the backdrop of the Karakoram.
+            Each accommodation at Sehrish Guest House Skardu is thoughtfully designed to blend warm hospitality with modern comfort against the backdrop of the Karakoram.
           </p>
         </AnimBlock>
       </div>

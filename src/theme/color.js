@@ -1,7 +1,7 @@
 export const COLORS = {
 
   // 🍷 Deep Burgundy / Wine (Elegant luxury primary)
-  primary: "#c9a55cde",
+  primary: "#2b412b",
 
   primaryDark: "#481F24",
 
@@ -28,7 +28,7 @@ export const COLORS = {
   lightBorder: "#EEE7E0",
 
   // ✨ Antique Champagne Gold
-  gold: "#080808",
+  gold: "#f8f8f8",
 
   goldLight: "#0c0c0b",
 
@@ -38,6 +38,6 @@ export const COLORS = {
   booking: "#003B95",
 
   // 🧱 Warm Terracotta Stone
-  stone: "#A87968",
+  stone: "#f8f6f5",
 
 };

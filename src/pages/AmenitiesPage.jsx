@@ -62,7 +62,7 @@ export default function AmenitiesPage({ setPage }) {
             Amenities & Facilities
           </h1>
           <p style={{ fontFamily: "Lato, sans-serif", fontSize: 14, color: COLORS.gold, maxWidth: 520, margin: "16px auto 0", lineHeight: 1.8 }}>
-            Beyond exceptional rooms, Skarchan Resorts offers a curated collection of experiences rooted in the landscape and culture of Gilgit-Baltistan.
+            Beyond exceptional rooms, Sehrish Guest House Skardu offers a curated collection of experiences rooted in the landscape and culture of Gilgit-Baltistan.
           </p>
         </AnimBlock>
       </div>
