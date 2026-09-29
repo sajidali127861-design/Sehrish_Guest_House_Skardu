@@ -20,12 +20,12 @@ export default function Navbar({ page, setPage }) {
   const navigate = (p) => { setPage(p); setMenuOpen(false); window.scrollTo(0, 0); };
 
   const navLinks = [
-    { label: "Home",       key: "home" },
-    { label: "Rooms",      key: "rooms" },
-    { label: "Gallery",    key: "gallery" },
-    { label: "Amenities",  key: "amenities" },
-    { label: "About",      key: "about" },
-    { label: "Contact",    key: "contact" },
+    { label: "Home", key: "home" },
+    { label: "Rooms", key: "rooms" },
+    { label: "Gallery", key: "gallery" },
+    { label: "Amenities", key: "amenities" },
+    { label: "About", key: "about" },
+    { label: "Contact", key: "contact" },
   ];
 
   const openBooking = () => { setIsBookingOpen(true); setMenuOpen(false); };
@@ -77,9 +77,9 @@ export default function Navbar({ page, setPage }) {
               {label}
             </span>
           ))}
-          {/* <button onClick={openBooking} className="btn-gold" style={{ padding: "8px 20px", fontSize: 12 }}>
+          {<button onClick={openBooking} className="btn-gold" style={{ padding: "8px 20px", fontSize: 12 }}>
             BOOK NOW
-          </button> */}
+          </button>}
         </div>
 
         {/* Mobile hamburger */}
