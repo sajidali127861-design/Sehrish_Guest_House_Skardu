@@ -77,7 +77,7 @@ export default function Navbar({ page, setPage }) {
               {label}
             </span>
           ))}
-          {<button onClick={openBooking} className="btn-gold" style={{ padding: "8px 20px", fontSize: 12 }}>
+          {<button onClick={openBooking} className="btn-gold" style={{ padding: "8px 20px", fontSize: 12, background: COLORS.primary }}>
             BOOK NOW
           </button>}
         </div>
